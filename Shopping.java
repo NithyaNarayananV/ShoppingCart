@@ -823,7 +823,8 @@ public class Shopping extends Class1
         {   @Override
             public void actionPerformed(ActionEvent e)
             {  
-                panel0.setVisible(false);
+                //panel0.setVisible(false);
+               panel0.setVisible(false);
                 ItemTemp = Item03;
                 QTemp = Q03;
                 C=3;
