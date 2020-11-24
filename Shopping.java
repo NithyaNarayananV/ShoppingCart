@@ -7,78 +7,6 @@ import javax.xml.namespace.QName;
 import java.net.*;
 import javax.swing.border.EmptyBorder;
 //public String U_Name;
-class UserName
-{
-    boolean UserFlag=false;
-    static JFrame F;
-    Frame F1 = new Frame();
-    JButton Login = new JButton(" Login ");
-    JPanel UserLogin =new JPanel();
-    JPanel User =new JPanel();
-    JLabel UserName = new JLabel("USER NAME");
-    JLabel Password = new JLabel("Password");
-    JTextField T_UserName = new JTextField(10);
-    //JTextField T_Password = new JTextField(10);
-
-    JLabel L_Name = new JLabel(" NAME");
-    JLabel L_Email = new JLabel("Email Id.");
-
-    JTextField T_Name = new JTextField(20);
-    JTextField T_Email = new JTextField(30);
-
-    public String U_Name;
-     
-    JPasswordField T_Password = new JPasswordField();   
-
-
-    boolean LogIn()
-    {
-        F1.setSize(1300, 800);
-        T_UserName.setText("UserName..");
-
-        User.setLayout(new BorderLayout());
-        UserLogin.setLayout(new GridLayout(3,2,10,10));
-        UserLogin.add(L_Name);
-        UserLogin.add(T_Name);
-        UserLogin.add(L_Email);
-        UserLogin.add(T_Email);
-        UserLogin.add(Login);
-
-        User.add(UserLogin, BorderLayout.CENTER);
-        User.setBorder(new EmptyBorder(300, 500, 300, 500));
-        F1.add(User);
-        F1.setVisible(true);
-       
-        Login.addActionListener(new ActionListener()
-        {   @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                U_Name = String.valueOf( T_Name.getText());
-                //double U_Mobile = Integer.parseInt(T_Mobile.getText());
-                String U_Email = String.valueOf( T_Email.getText());
-                if(U_Name.length()!=0)
-                //if(U_Mobile>100000000)
-                if(U_Email.contains("@"))
-                {
-                    //System.out.println(U);
-                    //System.out.println(P);
-                    UserFlag=true;
-                    //System.out.println("Success");
-                    F1.setVisible(false);
-                    //F.setVisible(true);
-                    F.setVisible(UserFlag); 
-                }
-                //System.out.println(" no "+U+" "+P);
-                
-                //FlagS = 9;
-                //Action_MethodSUB(FlagS);
-            }         
-        });
-        
-        return UserFlag;
-    }
-}
-
 class Class1 extends UserName
 {
         JFrame F1;
@@ -88,12 +16,6 @@ class Class1 extends UserName
         int TRY=0;
         String S="           ";
 
-        
-
-    //void Log()
-    //{
-        
-    //}
         int MODE = 1;
         JButton P0_Mode = new JButton(" LIGHT MODE ");
         JPanel P0_Mode_Panel = new JPanel(new BorderLayout());
@@ -251,8 +173,7 @@ class Class1 extends UserName
         int C,AC=0;
 
         Label BillTxt;
-
-        
+   
 }
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -276,8 +197,6 @@ public class Shopping extends Class1
     }
     public Shopping()
     {
-
-        
 
         //******************************* */
         F = new JFrame();
